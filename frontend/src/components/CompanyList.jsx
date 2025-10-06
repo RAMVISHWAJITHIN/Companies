@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { axiosInstance } from "../lib/axios";
 
-const CompanyList = ({ searchTerm, filterIndustry, refresh }) => {
+const CompanyList = ({ searchTerm, filterIndustry }) => {
   const [companies, setCompanies] = useState([]);
   const navigate = useNavigate();
 

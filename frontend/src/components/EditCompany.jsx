@@ -19,7 +19,7 @@ const EditCompany = () => {
     name: "",
     industry: "IT",
     imageUrl: "",
-    location: { city: "", country: "" },
+    location: { state: "", country: "" },
     description: "",
   });
 
@@ -39,7 +39,7 @@ const EditCompany = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    if (["city", "state", "country"].includes(name)) {
+    if (["state", "country"].includes(name)) {
       setCompanyData((prev) => ({
         ...prev,
         location: { ...prev.location, [name]: value },

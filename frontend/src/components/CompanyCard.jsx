@@ -67,7 +67,7 @@ const CompanyCard = () => {
         <p className="text-gray-700 mb-2 text-center">Industry: {company.industry}</p>
         <p className="text-gray-600 mb-2">{company.description}</p>
         <p className="text-gray-500 mt-2 text-center">
-          Location: {company.location.city}, {company.location.state || ""} {company.location.country}
+          Location: {company.location.state || ""} {company.location.country}
         </p>
         <div className="flex gap-4 mt-4 justify-center">
           <button

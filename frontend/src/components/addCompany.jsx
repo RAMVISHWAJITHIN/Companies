@@ -28,7 +28,7 @@ const AddCompany = () => {
         industry: company.industry,
         imageUrl: company.imageUrl,
         location: {
-          city: company.city,
+
           state: company.state,
           country: company.country,
         },
